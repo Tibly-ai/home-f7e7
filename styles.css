@@ -1,0 +1,7 @@
+
+[data-tb-bg]{position:relative}
+.tb-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.tb-bg video,.tb-bg img{width:100%;height:100%;object-fit:cover}
+.tb-bg-tint{position:absolute;inset:0;background:#000}
+[data-tb-bg]>*:not(.tb-bg){position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){.tb-bg video{display:none}}
